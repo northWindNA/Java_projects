@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exceptions {
+public class Exceptions {
     public static void main(String[] args) throws ScannerException {
         Scanner scan = new Scanner(System.in);
         while (true) {
