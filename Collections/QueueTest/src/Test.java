@@ -1,9 +1,8 @@
-import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Person person1 = new Person(1);
         Person person2 = new Person(2);
         Person person3 = new Person(3);
@@ -12,7 +11,7 @@ public class Test {
         Person person6 = new Person(6);
         Person person7 = new Person(7);
 
-        Queue<Person> people = new ArrayBlockingQueue<Person>(5);
+        Queue<Person> people = new ArrayBlockingQueue<>(5);
         System.out.println(people.offer(person2));
         System.out.println(people.offer(person3));
         System.out.println(people.offer(person4));
@@ -34,9 +33,9 @@ public class Test {
 }
 
 class Person {
-    int id;
+    private final int id;
 
-    public Person(int id) {
+    Person(int id) {
         this.id = id;
     }
 
