@@ -1,2 +1,2 @@
 # Java_projects
-Learning java
+Bunch of stuff
